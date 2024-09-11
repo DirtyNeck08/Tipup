@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DirtyNeckVol.1</title>
+    <style>
+        body {
+            background-color: black;
+            background-size: cover;
+            background-position: center;
+            width: 650px;
+            height: 650px;
+            margin: 0 auto;
+            border: 2px solid black;
+            box-sizing: border-box;
+            top: 55px;
+            position: fixed;
+        }
+
+        #bro {
+            background-image: url('https://s3.amazonaws.com/gather.fandalism.com/3000x3000%2D4355779%2D%2D23A40B39%2DD791%2D47A5%2D9C95009469A8DBB6%2D%2D0%2D%2D882238%2D%2DIMG5099%2Ejpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 400px;
+            height: 400px;
+            
+        }
+
+        /* Styles for the popup iframe */
+        #iframePopup {
+            display: none; /* Hidden by default */
+            position: fixed;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 40%;
+            height: 40%;
+            border: none;
+            z-index: 1000;
+            color: transparent;
+        }
+
+        /* Styles for the overlay */
+        #overlay {
+            display: none; /* Hidden by default */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            z-index: 999; /* Above other content */
+        }
+        
+         #yo {
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Parental_Advisory_label.svg/800px-Parental_Advisory_label.svg.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            
+            width: 100px;
+            height: 100px;
+            top: 340px;
+             left: 270px;
+             position: absolute;
+            z-index: 9999; /* Above other content */
+        }
+   #label{
+     
+     width: 100px;
+     height: 100px;
+     top: 380px;
+     left: 10px;
+     position: absolute;
+     z-index: 9999;
+     /* Above other content */
+   }
+    </style>
+</head>
+<body>
+    <div id="bro">
+     
+
+<p>
+    <a href="#" id="track1Link" style="color: white;  font-family: cursive; font-size: 16px; text-shadow: 1px 1px 0px black, -1px -1px 0px black, 1px -1px 0px black, -1px 1px 0px black; text-decoration: none;">1.Crawlspace</a>
+</p>
+<p>
+    <a href="#" id="track2Link" style="color: white;  font-family: cursive; font-size: 16px; text-shadow: 1px 1px 0px black, -1px -1px 0px black, 1px -1px 0px black, -1px 1px 0px black;text-decoration: none;">2.Trap2</a>
+</p>
+<p>
+  <a href="#" id="track3Link" style="color: white;  font-family: cursive; font-size: 16px; text-shadow: 1px 1px 0px black, -1px -1px 0px black, 1px -1px 0px black, -1px 1px 0px black;text-decoration: none;">3.GhostModeDungeonShit X Ft G Foolie</a>
+</p>
+<p>
+  <a href="#" id="track4Link" style="color: white;  font-family: cursive; font-size: 16px; text-shadow: 1px 1px 0px black, -1px -1px 0px black, 1px -1px 0px black, -1px 1px 0px black;text-decoration: none;">4.solo</a>
+</p>
+<p>
+  <a href="#" id="track5Link" style="color: white;  font-family: cursive; font-size: 16px; text-shadow: 1px 1px 0px black, -1px -1px 0px black, 1px -1px 0px black, -1px 1px 0px black;text-decoration: none;">5.lyrics2</a>
+</p>
+
+<p>
+  <a href="#" id="track6Link" style="color: white;  font-family: cursive; font-size: 16px; text-shadow: 1px 1px 0px black, -1px -1px 0px black, 1px -1px 0px black, -1px 1px 0px black;text-decoration: none;">6.Domination 101</a>
+</p>
+
+<p>
+  <a href="#" id="track7Link" style="color: white;  font-family: cursive; font-size: 16px; text-shadow: 1px 1px 0px black, -1px -1px 0px black, 1px -1px 0px black, -1px 1px 0px black;text-decoration: none;">7.GhostModeDungeonShit X Ft G Foolie</a>
+</p>
+<div id="yo"></div>
+<div id="label"><p>$<a href="https://cash.app/$NationCoop" target="_blank" style="color: green;text-decoration: none; ">https://cash.app/$NationCoop</a></p></div>
+
+    </div>
+
+    <!-- Overlay for the iframe -->
+    <div id="overlay"></div>
+    <iframe id="iframePopup" src="" frameborder="0"></iframe>
+
+    <script>
+        const track1Link = document.getElementById('track1Link');
+        const track2Link = document.getElementById('track2Link');
+        const track3Link = document.getElementById('track3Link');
+        const track4Link = document.getElementById('track4Link');
+        const track5Link = document.getElementById('track5Link');
+        const track6Link = document.getElementById('track6Link');
+        const track7Link = document.getElementById('track7Link');
+        const iframePopup = document.getElementById('iframePopup');
+        const overlay = document.getElementById('overlay');
+
+        track1Link.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default link action
+            iframePopup.src = 'https://youtube.com/embed/RH3vR1gKuEI?si=DLFsWfVo-XnCK_TJ'; // Set the iframe source
+            iframePopup.style.display = 'block'; // Show the iframe
+            overlay.style.display = 'block'; // Show the overlay
+        });
+track2Link.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default link action
+            iframePopup.src = 'https://youtube.com/embed/RqwCyDZdBzE?si=Woxl2Wj7a6_Ved6V'; // Set the iframe source
+            iframePopup.style.display = 'block'; // Show the iframe
+            overlay.style.display = 'block'; // Show the overlay
+        });
+track3Link.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default link action
+            iframePopup.src = 'https://youtube.com/embed/jAeSpewquu0?si=DA79NHvxxRZdQOr1'; // Set the iframe source
+            iframePopup.style.display = 'block'; // Show the iframe
+            overlay.style.display = 'block'; // Show the overlay
+        });
+
+track4Link.addEventListener('click', function(event) {
+  event.preventDefault(); // Prevent the default link action
+  iframePopup.src = 'https://youtube.com/embed/pHthy70dxFE?si=eXGgMw9fCt6mZvcq'; // Set the iframe source
+  iframePopup.style.display = 'block'; // Show the iframe
+  overlay.style.display = 'block'; // Show the overlay
+});
+
+track5Link.addEventListener('click', function(event) {
+  event.preventDefault(); // Prevent the default link action
+  iframePopup.src = 'https://youtube.com/embed/lvKpehw_ot4?si=LXBF3uES9DYy40rf'; // Set the iframe source
+  iframePopup.style.display = 'block'; // Show the iframe
+  overlay.style.display = 'block'; // Show the overlay
+});
+
+track6Link.addEventListener('click', function(event) {
+  event.preventDefault(); // Prevent the default link action
+  iframePopup.src = 'https://youtube.com/embed/vvXMt9u-gEY?si=_r7Q_nvdY9YPumKw'; // Set the iframe source
+  iframePopup.style.display = 'block'; // Show the iframe
+  overlay.style.display = 'block'; // Show the overlay
+});
+
+        // Close the iframe and overlay when the overlay is clicked
+        overlay.addEventListener('click', function() {
+            iframePopup.style.display = 'none'; // Hide the iframe
+            overlay.style.display = 'none'; // Hide the overlay
+            iframePopup.src = ''; // Clear the iframe source
+        });
+    </script>
+  
+</body>
+</html>
